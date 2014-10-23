@@ -238,12 +238,6 @@ app.controller('Issue3Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "for"
       },
       {
-        "name": "國民黨立委",
-        "party": "中國國民黨",
-        "party_eng": "KMT",
-        "position" : "against"
-      },
-      {
         "name": "司法院",
         "party": "政府部門",
         "party_eng": "GOV",

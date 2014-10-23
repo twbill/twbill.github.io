@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <base href="/">
+    <!-- Standard Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properities -->
+    <title>食品安全衛生管理法 | 國會無雙</title>
+    <meta content="食品安全衛生管理法 | 修法爭議 by 國會無雙" property="og:site_name" />
+    <meta content="食品安全衛生管理法 | 修法爭議 by 國會無雙" property="og:title" />
+    <meta content="食品安全衛生管理法 | 修法爭議 by 國會無雙"/>
+    <link href="http://cdn.musou.tw/assets/musou-favicon-92ac8d5b768e8283d8bf6cd8e1ab8df1.png" rel="icon" size="32x32" />
+    
+    <!-- SemanticUI -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="packaged/css/semantic.css">
+    <link rel="stylesheet" href="hint.min.css"></link>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <script src="packaged/javascript/semantic.js"></script>
+    
+    
+    <!-- AngularJS -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+
+    <script type='text/javascript' src="app.js"></script>
+    
+   
+</head>
+<body class="body">
+   
+    <div id="navigation">
+        <!--<div class="nav_item_logo"><a href="//musou.tw" target="_blank"><img src="images/musou.svg"></a></div>-->
+            
+        <div class="nav" ng-controller="NavCtrl">
+            <div class="nav_item_left_logo" ng-click="go('/')">
+
+                <img class="small_icon" src="images/musou_logo.svg">
+                <div class="nav_item_left_logo_inner"> 
+                <span class="web">食品安全衛生管理法</span></div>
+            </div>
+            <div class="nav_item" ng-click="go('/issue1')"
+            ng-class="{'nav_item_active':isPath('/issue1')}" >爭議一</div>
+            <div class="nav_item" ng-click="go('/issue2')"
+            ng-class="{'nav_item_active':isPath('/issue2')}" >爭議二</div>
+            <div class="nav_item" ng-click="go('/issue3')"
+            ng-class="{'nav_item_active':isPath('/issue3')}" >爭議三</div>
+            <div class="nav_item" ng-click="go('/issue4')"
+            ng-class="{'nav_item_active':isPath('/issue4')}" >爭議四</div>
+            <div class="nav_item" ng-click="go('/issue5')" ng-class="{'nav_item_active':isPath('/issue5')}" >爭議五</div>
+            
+        </div>
+
+    </div>
+
+    <div ng-view></div>
+    <div id="footer">
+
+        <div class="footer_suggest">我們還在完善這份說明中，如果你有任何建議，<a class="suggest_link" href="mailto:info@watchout.tw">請告訴我們</a>。：）</div>
+        <div class="wrapper">
+            <br/>
+            <a href="//musou.tw" target="_blank">
+               <img src="images/musou_white.svg">
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
