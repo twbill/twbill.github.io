@@ -77,8 +77,7 @@ app.controller('NavCtrl', ['$scope', '$location', function ($scope, $location){
       $location.path(path);
    };
    $scope.isPath = function(path){
-      console.log($location.path());
-      console.log(path);
+      
       return ($location.path() === path);
    };
 }]);
