@@ -76,6 +76,11 @@ app.controller('NavCtrl', ['$scope', '$location', function ($scope, $location){
       window.scrollTo(0,0);
       $location.path(path);
    };
+   $scope.isPath = function(path){
+      console.log($location.path());
+      console.log(path);
+      return ($location.path() === path);
+   };
 }]);
 app.controller('IndexCtrl', ['$scope', 'DataService', '$location', function ($scope, DataService, $location){
   $scope.politians = [

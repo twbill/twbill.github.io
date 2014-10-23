@@ -44,11 +44,15 @@
                 <div class="nav_item_left_logo_inner"> 
                 <span class="web">食品安全衛生管理法</span></div>
             </div>
-            <div class="nav_item" ng-click="go('/issue1')">爭議一</div>
-            <div class="nav_item" ng-click="go('/issue2')">爭議二</div>
-            <div class="nav_item" ng-click="go('/issue3')">爭議三</div>
-            <div class="nav_item" ng-click="go('/issue4')">爭議四</div>
-            <div class="nav_item" ng-click="go('/issue5')">爭議五</div>
+            <div class="nav_item" ng-click="go('/issue1')"
+            ng-class="{'nav_item_active':isPath('/issue1')}" >爭議一</div>
+            <div class="nav_item" ng-click="go('/issue2')"
+            ng-class="{'nav_item_active':isPath('/issue2')}" >爭議二</div>
+            <div class="nav_item" ng-click="go('/issue3')"
+            ng-class="{'nav_item_active':isPath('/issue3')}" >爭議三</div>
+            <div class="nav_item" ng-click="go('/issue4')"
+            ng-class="{'nav_item_active':isPath('/issue4')}" >爭議四</div>
+            <div class="nav_item" ng-click="go('/issue5')" ng-class="{'nav_item_active':isPath('/issue5')}" >爭議五</div>
             
         </div>
 

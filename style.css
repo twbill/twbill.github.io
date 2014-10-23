@@ -120,8 +120,10 @@ a.link, a.link:visited {
   }
 }
 
-
-.nav_item_left_logo:hover, .nav_item:hover {
+.nav_item_active {
+  border-bottom: 5px solid rgb(53,55,54);
+}
+.nav_item_left_logo:hover, .nav_item:hover{
     background: rgb(242,240,241);
 }
 #navigation{
@@ -359,7 +361,7 @@ a.link, a.link:visited {
   display: inline-block;
   margin-top: 20px;
   vertical-align: top;
-  
+
 }
 @media screen and (max-width: 600px){
   .index_issue {
