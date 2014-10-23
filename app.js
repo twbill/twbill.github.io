@@ -12,7 +12,7 @@ app.directive('errSrc', function() {
           return attrs['ngSrc'];
         }, function (value) {
           if (!value) {
-            element.attr('src', attrs.errSrc);  
+            element.attr('src', attrs.errSrc);
           }
       });
 
@@ -30,28 +30,28 @@ app.config(['$routeProvider','$locationProvider',
       templateUrl: 'partials/politician.html',
       controller: 'PoliticianCtrl'
     }).
-      when('/issue1',{
+      when('/food-safety/issue1',{
       templateUrl: 'partials/issue1.html',
       controller: 'Issue1Ctrl'
     }).
-      when('/issue2',{
+      when('/food-safety/issue2',{
       templateUrl: 'partials/issue2.html',
       controller: 'Issue2Ctrl'
     }).
-      when('/issue3',{
+      when('/food-safety/issue3',{
       templateUrl: 'partials/issue3.html',
       controller: 'Issue3Ctrl'
     }).
-      when('/issue4',{
+      when('/food-safety/issue4',{
       templateUrl: 'partials/issue4.html',
       controller: 'Issue4Ctrl'
     }).
-      when('/issue5',{
+      when('/food-safety/issue5',{
       templateUrl: 'partials/issue5.html',
       controller: 'Issue5Ctrl'
     }).
       otherwise({
-      redirectTo:'/',
+      redirectTo:'/food-safety',
       templateUrl: 'partials/index.html',
       controller: 'IndexCtrl'
     });
@@ -62,7 +62,7 @@ app.config(['$routeProvider','$locationProvider',
 ]);
 
 app.factory('DataService', function (){
-  
+
   var DataService = {};
   DataService.getPreferences = function (){
     return 1;
@@ -77,7 +77,7 @@ app.controller('NavCtrl', ['$scope', '$location', function ($scope, $location){
       $location.path(path);
    };
    $scope.isPath = function(path){
-      
+
       return ($location.path() === path);
    };
 }]);
@@ -132,7 +132,7 @@ app.controller('IndexCtrl', ['$scope', 'DataService', '$location', function ($sc
         "position" : "for"
       }
   ]
-  
+
    $scope.go = function(path){
       window.scrollTo(0,0);
       $location.path(path);
@@ -189,7 +189,7 @@ app.controller('Issue1Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "for"
       }
   ]
-   
+
    $scope.go = function(path){
       window.scrollTo(0,0);
       $location.path(path);
@@ -216,13 +216,13 @@ app.controller('Issue2Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "against"
       }
   ]
-  
+
    $scope.go = function(path){
       $location.path(path);
    };
 }]);
 app.controller('Issue3Ctrl', ['$scope', 'DataService', '$location', function ($scope, DataService, $location){
-  
+
   $scope.politians = [
       {
         "name": "田秋堇",
@@ -249,14 +249,14 @@ app.controller('Issue3Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "against"
       }
   ]
-  
+
    $scope.go = function(path){
       window.scrollTo(0,0);
       $location.path(path);
    };
 }]);
 app.controller('Issue4Ctrl', ['$scope', 'DataService', '$location', function ($scope, DataService, $location){
-  
+
   $scope.politians = [
       {
         "name": "田秋堇",
@@ -289,14 +289,14 @@ app.controller('Issue4Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "against"
       }
   ]
-  
+
    $scope.go = function(path){
       window.scrollTo(0,0);
       $location.path(path);
    };
 }]);
 app.controller('Issue5Ctrl', ['$scope', 'DataService', '$location', function ($scope, DataService, $location){
-  
+
   $scope.politians = [
       {
         "name": "田秋堇",
@@ -311,7 +311,7 @@ app.controller('Issue5Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "against"
       }
   ]
-  
+
    $scope.go = function(path){
       window.scrollTo(0,0);
       $location.path(path);
@@ -375,7 +375,7 @@ app.controller('PoliticianCtrl', ['$scope', 'DataService', function ($scope, Dat
         "party_eng": "DPP",
         "position" : "against"
       };
-   
+
 }]);
 
 
