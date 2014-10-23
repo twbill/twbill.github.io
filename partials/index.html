@@ -1,147 +1,61 @@
 <div id="content" class="wrapper">
-  <div class="ui segment">
-  
-  <!-- <div class="ui ribbon red label">朝野協商處理</div>-->
-  <h1 class="page_title">爭議一：法人除罪化 <div class="ui circular red label">尚無共識，朝野協商處理</div></h1>
-  
-  <div class="bullet_item">
-      <div class="bullet_item_title">為何重要</div><div class="bullet_item_inner">食安問題人心惶惶，但最後裁罰的結果，往往和不法業者的巨額獲利比例懸殊。究竟要如何才能罰得到？</div>
-  </div>
-  <div class="bullet_item">
-      <div class="bullet_item_title">目前進度</div><div class="bullet_item_inner">委員會初審無共識，保留送朝野協商。已排入 10/24 院會。</div>
-  </div>
-
-  
-  <div class="progress_block">
-      <div class="bullet_progress bullet_progress_done">一讀</div>
-      <div class="bullet_progress bullet_progress_done">委員會</div>
-      <div class="bullet_progress bullet_progress_active">朝野協商</div>
-      <div class="bullet_progress bullet_progress_pending">二讀</div>
-      <div class="bullet_progress bullet_progress_pending"><a class="hint--top hint--always bullet_progress_hint" data-hint="最快 10/24"></a>三讀</div>
-  </div>
-
-
-  <div class="ui divider"></div>
-
-  <div class="position_block">
-    <div class="position_main_title position_main_title_for">支持</div>
-  </div>
-  <div class="position_block">
-    <div class="position_main_title position_main_title_against">反對</div>
-  </div>
-
-  <div class="position_block">
-    <div class="position_title position_title_for">支持代表</div>
-    <div class="position_inner">
-    <div class="avatar_item" 
-         ng-repeat="n in politians | filter:{'position': 'for'}"
-         ng-class="{'avatar_item_active':isActiveLeg(n.id)}"
-         >
-         <img class="avatar_image" ng-src="images/avatar/{{n.name}}.png" err-src="     images/candidate-not-found.jpg"
-           ng-class="{'KMT_image':n.party=='中國國民黨','DPP_image':n.party=='民主進步黨',
-                    'PFP_image':n.party=='親民黨','TSU_image':n.party=='台灣團結聯盟',
-                    'NP_image':n.party=='無黨籍','NPU_image':n.party=='無黨團結聯盟'}">
-         <div class="avatar_name">{{n.name}}</div>
-    </div>
-    </div>
-  </div><!-- end of position block -->
-  <div class="position_block">
-    <div class="position_title position_title_against">反對代表</div>
-    <div class="position_inner">
-    <div class="avatar_item" 
-       ng-repeat="n in politians | filter:{'position': 'against'}"
-       ng-class="{'avatar_item_active':isActiveLeg(n.id)}"
-       ng-click="go('politician')"
-       >
-       <img class="avatar_image" 
-            ng-src="images/avatar/{{n.name}}.png" 
-            err-src="images/candidate-not-found.jpg"
-            ng-class="{'KMT_image':n.party=='中國國民黨','DPP_image':n.party=='民主進步黨','PFP_image':n.party=='親民黨','TSU_image':n.party=='台灣團結聯盟','NP_image':n.party=='無黨籍','NPU_image':n.party=='無黨團結聯盟'}">
-       <div class="avatar_name">{{n.name}}</div>
-    </div>
-    </div>
-  </div><!-- end of position block -->
-
-
-  <div class="position_block">
-    <div class="position_title position_title_for">支持理由</div>
-    <div class="position_inner">
-    <ol>
-      <li>因為刑罰效力優於行政裁罰，且一罪不兩罰，導致一年前的「大統長基混油案」最後輕罰。把裁罰大刀交給衛福部，才能「罰得到、罰得重」。</li>
-    </ol>
-
+<img class="cover_img" src="images/cover.jpg">
+<div class="cover_title">食品安全衛生管理法
     <div class="ui pointing below label">
-      <div class="editors_q">小編想問</div>
-    </div>
-    <ul><li>為什麼不把刑罰的罰金提高，而是要把刑罰取消，統一改成行政罰鍰？</li></ul>
-   
-    </div>
-  </div><!-- end of position block -->
-  <div class="position_block">
-    <div class="position_title position_title_against">反對理由</div>
-    <div class="position_inner">
-        <ol>
-            <li>將「法人除罪化」，企業主可將其資產轉移到公司規避處罰。</li>
-            <li>刑法較為嚴格，即使用行政法罰一開始罰很多錢，業者可以訴願再訴願，還是必須經行政法院判決，最後可能是喊爽的。</li>
-        </ol>
-    </div>
-  </div><!-- end of position block -->
+      <div class="editors_q">到底在修啥？</div>
+    </div></div>
+<div class="ui divider"></div>
 
- 
-  <div class="ui divider"></div>
-  
-  
-  <div id="text_content">
-    <div id="text_nav">NAV</div>
-  <!-- 修法背景 -->
-  <h1 class="ui header">修法背景</h1>
-  <p>過去《食管法》因「刑事罰優先」規定，且「一罪不兩罰」，導致一年前的「大統長基混油案」業者，在法院判決罰金 3,800 萬後，原新台幣 18.5 億的行政罰鍰遭撤銷，引發外界譁然。如何提高廠商裁罰金額，追討不當得利，成為此次修法重點。</p>
+<div class="index_passed">
+
+<p>油品風暴延燒，《食品安全衛生管理法》受各界關注。《食品安全衛生管理法》於十月16日由社會福利及衛生環境委員會逐條審查完畢，初審通過許多外界矚目的重要條文，將交付立法院院會二、三讀：</p>
+
+<ol>
+<li><div class="index_passed_title">自設實驗室</div>（第七條）：義美因自設實驗室檢驗產品原料而倖免於油品風暴，獲得外界好評，《食管法》新法將納入「義美條款」，未來上市、上櫃及經中央主管機關公告類別及規模食品業者，應設實驗室自主檢驗。</li>
+
+<li><div class="index_passed_title">電子發票申報</div>（第九條）：食品廠商必須分階段使用電子發票，以電子方式申報食品業者應以電子方式申報產品原料、半成品與成品供應來源等資料，以利追溯食品源頭。</li>
+
+<li><div class="index_passed_title">分廠分照</div>（第十條）：業者設廠必須「分廠分照」，未來食品廠不能兼營飼料廠，廠區、營業項目需各自獨立，以避免現今食用油及飼料油混用的食安危機。</li>
+
+<li><div class="index_passed_title">提高罰鍰</div>（第四十二條）：增加最高罰鍰至新台幣兩億元，為舊法的三倍。</li>
+</ol>
+
+<p>但衛環委員會中還有許多重要條文未達共識，經朝野協商條文會如何調整？是否推翻原有討論？</p>
+
+<h3 class="ui header">《沃草》整理了朝野協商五大重點爭議懶人包，讓大家一起關注《食品安全衛生管理法》修法動態！</h3>
 
 
-  <!-- 對應條文 -->
-  <h1 class="ui header">對應條文</h1>
-  <p>《食品安全衛生管理法》第四十九條、第四十九之一條、第四十九之二條。</p>
-
-  
-  <!-- 對應條文 -->
-  <h1 class="ui header">修法內容</h1>
-  
-  <p>行政院版修法草案第四十九條欲刪除「法人罰金刑」，希望以行政法裁罰「法人」，藉此解決「一罪不兩罰」問題。但在司法院的支持下，委員會傾向保留「法人罰金刑」，他們認為，雖然大統長基案可能重演，但修法後罰金不會比行政罰鍰少，藉增修條文，即使行政裁罰遭撤銷，仍有機制追討不當得利，最高可追討目前金額的十倍。</p>
-
-  <p>立委田秋堇認為，「法人除罪化」能追究魏應充刑責，但「頂新無代誌」，她認為，立法是社會溝通的工程，必須讓人民知道正義能得到伸張。立委尤美女則補充，業者可能將財產置於公司，若公司除罪化，檢察官將無法扣押公司財產。但保留「法人罰金刑」，就能防止業者脫產。尤美女認為，刑法較為嚴格，「即使用行政法罰一開始罰很多錢，業者可以訴願再訴願，還是必須經行政法院判決，最後可能是喊爽的。」</p>
-
-  <p>衛福部認為，雖然刪除法人罰金刑可能讓外界誤會為「法人除罪化」，但他們憂心，現階段共識仍無法解決「一罪不二罰」問題，過去廠商因刑事判決導致高額行政裁罰遭撤銷的案例將重演。法務部表示，目前富味香行政裁罰為新台幣4.6億元，若法院刑事判決確定，一樣會遭撤銷，「要考量民眾是否接受」，國民黨召委王育敏也憂心民眾無法接受。最後委員會將此案保留，交付朝野協商。</p>
-
-  <!-- 對魏應充案的影響 -->
-  <h1 class="ui header">對魏應充案的影響</h1>
-  <p><span class="p_highlight">原本最高可罰 8000 萬，修法通過後最高只能罰 300 萬。</span></p>
-  <p>若法官審理後認為味全公司犯罪成立，依照現行食安法可科以最高金額 8000 萬元罰金；若「法人除罪化」後，僅能由衛生單位裁罰 300 萬元的罰鍰。</p>
-
-  
-  <!-- 初審後續 -->
-  <h1 class="ui header">初審後續</h1>
-  <p>《食品安全衛生管理法》明天將進入院會二三讀，初審未過之條文則送交朝野協商。
-法務部昨（23）天聲明，《食品安全衛生管理法》對於法人（如公司）的處罰，不管是法院判決的罰金，還是行政機關裁罰的罰鍰，都是罰錢，所以並沒有不處罰法人的疑慮。國民黨團則隨後表示支持。</p>
-
-  <h1 class="ui header">相關報導</h1>
-  <div class="ui list">
-  <a class="item link" href="http://www.newsmarket.com.tw/blog/59482/" target="_blank">
-    <i class="right triangle icon"></i>
-    食安修法刪除「法人罰金刑」顧此失彼 讓味全銷售大統長基混油案罰不痛 / 上下游
-  </a>
-  <a class="item link" href="http://www.appledaily.com.tw/realtimenews/article/local/20141022/492565/" target="_blank">
-    <i class="right triangle icon"></i>
-    食安法修法　法務部籲刪法人罰金刑 / 蘋果日報
-  </a>
-  <a class="item link" href="http://www.appledaily.com.tw/realtimenews/article/politics/20141022/492334/" target="_blank">
-    <i class="right triangle icon"></i>
-    藍團挺政院修《食管法》　刪一罪不二罰原則 / 蘋果日報
-  </a>
+<div class="index_issue" ng-click="go('issue1')">
+  <div class="index_issue_inner">
+  <h2 class="ui header">爭議一：法人除罪化 <div class="ui circular red label">朝野協商處理</div> </h2>
+  <div class="bullet_item">
+      為何重要：食安問題人心惶惶，但最後裁罰的結果，往往和不法業者的巨額獲利比例懸殊。究竟要如何才能罰得到？
   </div>
+  <div class="goseeblock">
+    <div class="goseebutton" ng-click="go('issue1')">查看</div>
+  </div>
+  </div>
+</div><!-- end of index_issue -->
 
+<div class="index_issue" ng-click="go('issue2')">
+  <div class="index_issue_inner">
+  <h2 class="ui header">爭議二：吹哨者條款 <div class="ui circular red label">朝野協商處理</div> </h2>
+  <div class="bullet_item">
+      為何重要：要揪出黑心食品，內部員工往往比稽察人員更知道工廠內部狀況。我們能夠過保護吹哨者，來建立更好的食安嗎？
+  </div>
+  <div class="goseeblock">
+    <div class="goseebutton" ng-click="go('issue2')">查看</div></div>
+  </div>
+</div><!-- end of index_issue -->
 
-  
-  <div><!-- end of text_content -->
-
-</div><!-- end of ui segment -->
+<div class="index_issue" ng-click="go('issue3')">
+  <div class="index_issue_inner">
+  <h2 class="ui header">爭議三：消費者保護（舉證反轉 + 補助訴訟費用 <div class="ui circular red label">朝野協商處理</div> </h2>
+  <div class="bullet_item">
+      為何重要：2011 年的三聚氫氨事件中，消費者因難舉證身體受到侵害而無法順利求償。此修法將食安受害的舉證責任，由受害消費者轉移為業者，讓舉證責任回歸廠商。同時，修法中也將補助消費訴訟的相關費用。
+  </div>
+  <div class="goseeblock">
+    <div class="goseebutton" ng-click="go('issue3')">查看</div></div>
+  </div>
+</div><!-- end of index_issue -->
 </div><!-- end of wrapper -->

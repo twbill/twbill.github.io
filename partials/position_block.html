@@ -1,0 +1,38 @@
+<div class="position_block">
+    <div class="position_main_title position_main_title_for">支持</div>
+  </div>
+  <div class="position_block">
+    <div class="position_main_title position_main_title_against">反對</div>
+  </div>
+
+  <div class="position_block">
+    <div class="position_title position_title_for">支持代表</div>
+    <div class="position_inner">
+    <div class="avatar_item" 
+         ng-repeat="n in politians | filter:{'position': 'for'}"
+         ng-class="{'avatar_item_active':isActiveLeg(n.id)}"
+         >
+         <img class="avatar_image" ng-src="images/avatar/{{n.name}}.png" err-src="     images/candidate-not-found.jpg"
+           ng-class="{'KMT_image':n.party=='中國國民黨','DPP_image':n.party=='民主進步黨',
+                    'PFP_image':n.party=='親民黨','TSU_image':n.party=='台灣團結聯盟',
+                    'NP_image':n.party=='無黨籍','NPU_image':n.party=='無黨團結聯盟'}">
+         <div class="avatar_name">{{n.name}}</div>
+    </div>
+    </div>
+  </div><!-- end of position block -->
+  <div class="position_block">
+    <div class="position_title position_title_against">反對代表</div>
+    <div class="position_inner">
+    <div class="avatar_item" 
+       ng-repeat="n in politians | filter:{'position': 'against'}"
+       ng-class="{'avatar_item_active':isActiveLeg(n.id)}"
+       ng-click="go('politician')"
+       >
+       <img class="avatar_image" 
+            ng-src="images/avatar/{{n.name}}.png" 
+            err-src="images/candidate-not-found.jpg"
+            ng-class="{'KMT_image':n.party=='中國國民黨','DPP_image':n.party=='民主進步黨','PFP_image':n.party=='親民黨','TSU_image':n.party=='台灣團結聯盟','NP_image':n.party=='無黨籍','NPU_image':n.party=='無黨團結聯盟'}">
+       <div class="avatar_name">{{n.name}}</div>
+    </div>
+    </div>
+  </div><!-- end of position block -->
