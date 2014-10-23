@@ -26,7 +26,6 @@
     <div class="avatar_item" 
        ng-repeat="n in politians | filter:{'position': 'against'}"
        ng-class="{'avatar_item_active':isActiveLeg(n.id)}"
-       ng-click="go('politician')"
        >
        <img class="avatar_image" 
             ng-src="images/avatar/{{n.name}}.png" 

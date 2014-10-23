@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 20 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <description>Created with Sketch.</description>
+    <defs>
+        <path id="path-1" d="M-0.0256390244,24.9899701 L24.025639,24.9899701 L24.025639,-0.0164243028 L-0.0256390244,-0.0164243028 L-0.0256390244,24.9899701 Z" ></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        
+        <g id="Group-13" sketch:type="MSLayerGroup" transform="translate(0.000000, 5.500000)">
+            <mask id="mask-2" sketch:name="Clip 11" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-11"></g>
+            <path d="M1.03356098,-0.0163645418 L-0.0255902439,24.9900398 L10.6326537,23.33001 L10.6326537,13.3463446 L4.99373659,13.3463446 L5.0876878,9.7365239 L7.00477073,10.0483167 L7.00477073,11.6479183 L10.6326537,12.0205378 L10.6326537,3.41057769 L1.03356098,-0.0163645418 Z" id="Fill-10" fill="rgb(136,0,19)" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            <path d="M22.9662146,-0.0163645418 L13.3676488,3.41057769 L13.3676488,12.0238347 L17.0141366,11.6491036 L17.0141366,10.0483167 L18.9310829,9.7365239 L19.0249171,13.3463446 L13.3676488,13.3463446 L13.3676488,23.33001 L24.0256293,24.9900398 L22.9662146,-0.0163645418 Z" id="Fill-12" fill="rgb(136,0,19)" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

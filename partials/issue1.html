@@ -11,15 +11,7 @@
       <div class="bullet_item_title">目前進度</div><div class="bullet_item_inner">委員會初審無共識，保留送朝野協商。已排入 10/24 院會。</div>
   </div>
 
-  
-  <div class="progress_block">
-      <div class="bullet_progress bullet_progress_done">一讀</div>
-      <div class="bullet_progress bullet_progress_done">委員會</div>
-      <div class="bullet_progress bullet_progress_active">朝野協商</div>
-      <div class="bullet_progress bullet_progress_pending">二讀</div>
-      <div class="bullet_progress bullet_progress_pending"><a class="hint--top hint--always bullet_progress_hint" data-hint="最快 10/24"></a>三讀</div>
-  </div>
-
+  <div ng-include src="'partials/bill_progress.html'"></div>
 
   <div class="ui divider"></div>
   <div ng-include src="'partials/position_block.html'"></div>
@@ -54,7 +46,7 @@
   
   
   <div id="text_content">
-    <div id="text_nav">NAV</div>
+    <!-- <div id="text_nav">NAV</div> -->
   <!-- 修法背景 -->
   <h1 class="ui header">修法背景</h1>
   <p>過去《食管法》因「刑事罰優先」規定，且「一罪不兩罰」，導致一年前的「大統長基混油案」業者，在法院判決罰金 3,800 萬後，原新台幣 18.5 億的行政罰鍰遭撤銷，引發外界譁然。如何提高廠商裁罰金額，追討不當得利，成為此次修法重點。</p>
@@ -66,7 +58,7 @@
 
   
   <!-- 對應條文 -->
-  <h1 class="ui header">修法內容</h1>
+  <h1 class="ui header">初審修法內容</h1>
   
   <p>行政院版修法草案第四十九條欲刪除「法人罰金刑」，希望以行政法裁罰「法人」，藉此解決「一罪不兩罰」問題。但在司法院的支持下，委員會傾向保留「法人罰金刑」，他們認為，雖然大統長基案可能重演，但修法後罰金不會比行政罰鍰少，藉增修條文，即使行政裁罰遭撤銷，仍有機制追討不當得利，最高可追討目前金額的十倍。</p>
 

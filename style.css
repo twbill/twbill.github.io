@@ -36,10 +36,16 @@ a.link, a.link:visited {
     max-width:1000px;
     margin:0 auto;
   }
+  .mobi {
+    display: none;
+  }
 }
 @media screen and (max-width: 1000px){
   .nav{
      width: 100%;
+  }
+  .mobi {
+     display: none;
   }
 }
 @media (max-width: 400px){
@@ -49,6 +55,13 @@ a.link, a.link:visited {
   .nav{
      width: 100%;
   }
+  .web {
+    display: none;
+  }
+  .mobi {
+     display: inline-block;
+  }
+
 }
 .page_wrapper {
    background: white;
@@ -62,18 +75,53 @@ a.link, a.link:visited {
   box-sizing: border-box;
 
 }
-.nav {
-}
 .nav_item {
+    vertical-align: top;
     font-weight: 700;
     display: inline-block;
     cursor: pointer;
-    height: 40px;
+    height: 50px;
     padding: 5px;
-    padding-top: 10px;
+    padding-top: 15px;
     box-sizing: border-box;
 }
-.nav_item:hover {
+.nav_item_logo {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+@media (max-width: 600px){
+  .nav_item_logo{
+    display: none;
+  }
+}
+.nav_item_left_logo {
+    vertical-align: top;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.nav_item_left_logo_inner {
+  padding-top: 10px;
+  display: inline-block;
+}
+.small_icon {
+  display: inline-block;
+  vertical-align: top;
+}
+@media (max-width: 600px){
+  .small_icon{
+    padding-top: 5px;
+    width: 25px;
+  }
+}
+
+
+.nav_item_left_logo:hover, .nav_item:hover {
     background: rgb(242,240,241);
 }
 #navigation{
@@ -84,15 +132,32 @@ a.link, a.link:visited {
     background:rgb(230,231,226);
 }
 #content {
-	margin-top: 40px;
+	margin-top: 60px;
+}
+#footer {
+  width: 100%;
+  height: 200px;
+  background: rgb(65,61,58);
+  color: rgb(247,245,243);
+}
+.suggest_link, .suggest_link:visited {
+  color: rgb(53,55,54);
+
+}
+.suggest_link:hover {
+  border-bottom: 1px solid rgb(53,55,54);
+}
+.footer_suggest {
+  background: rgb(230,231,226);
+  color: rgb(53,55,54);
+  padding: 15px;
+  text-align: center;
 }
 #text_content {
   max-width: 700px;
   position: relative;
 }
-#text_nav {
-  
-}
+
 @media screen and (min-width: 1000px){
   #text_nav {
     position: absolute;
@@ -294,6 +359,7 @@ a.link, a.link:visited {
   display: inline-block;
   margin-top: 20px;
   vertical-align: top;
+  
 }
 @media screen and (max-width: 600px){
   .index_issue {
@@ -305,8 +371,9 @@ a.link, a.link:visited {
 }
 .index_passed_title {
   display: inline-block;
-  font-weight: 900;
+  font-weight: 800;
   color: rgb(55,53,54);
+  
 }
 .index_issue_inner{
   padding: 10px;

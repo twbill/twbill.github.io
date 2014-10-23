@@ -56,7 +56,7 @@ app.config(['$routeProvider','$locationProvider',
       controller: 'IndexCtrl'
     });
 
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
   }
 ]);
@@ -307,25 +307,7 @@ app.controller('Issue5Ctrl', ['$scope', 'DataService', '$location', function ($s
         "position" : "for"
       },
       {
-        "name": "尤美女",
-        "party": "民主進步黨",
-        "party_eng": "DPP",
-        "position" : "for"
-      },
-      {
-        "name": "國民黨立委",
-        "party": "中國國民黨",
-        "party_eng": "KMT",
-        "position" : "against"
-      },
-      {
-        "name": "司法院",
-        "party": "政府部門",
-        "party_eng": "GOV",
-        "position" : "against"
-      },
-      {
-        "name": "消保處",
+        "name": "警政署",
         "party": "政府部門",
         "party_eng": "GOV",
         "position" : "against"

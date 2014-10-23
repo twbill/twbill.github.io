@@ -15,14 +15,7 @@
   </div>
 
   
-  <div class="progress_block">
-      <div class="bullet_progress bullet_progress_done">一讀</div>
-      <div class="bullet_progress bullet_progress_done">委員會</div>
-      <div class="bullet_progress bullet_progress_active">朝野協商</div>
-      <div class="bullet_progress bullet_progress_pending">二讀</div>
-      <div class="bullet_progress bullet_progress_pending"><a class="hint--top hint--always bullet_progress_hint" data-hint="最快 10/24"></a>三讀</div>
-  </div>
-
+  <div ng-include src="'partials/bill_progress.html'"></div>
 
   <div class="ui divider"></div>
   <div ng-include src="'partials/position_block.html'"></div>
@@ -33,7 +26,7 @@
     <div class="position_inner">
     <ol>
       <li>應變會議無法常態處理食安問題，有效進行跨部會整合。</li>
-      <li>訂在母法，避免受夠空白授權了</li>
+      <li>訂在母法，避免空白授權。</li>
     </ol>
     <!-- 小編想問 BLOCK-->
     </div>
@@ -56,7 +49,7 @@
   
   
   <div id="text_content">
-    <div id="text_nav">NAV</div>
+    <!-- <div id="text_nav">NAV</div> -->
   <!-- 修法背景 -->
   <h1 class="ui header">修法背景</h1>
   <p>原來的食安會報是由行政院副院長擔任召集人，為任務型編組，也就是，只有在問題發生時才開會因應。</p>
@@ -91,11 +84,17 @@
   <h1 class="ui header">初審後續</h1>
   <p>國民黨立委王育敏表示，現有食品安全小組與食安會報屬性類似，是否需實質立法未達共識，初審保留，待朝野協商。</p>
 
+  <p>但在法案尚未進入院會二、三讀，國安局先行於十月20日偕同警政署、調查局成立食安「預警會報」，並納入海巡署、移民署及憲指部等機關成員，加強查緝黑心食品；行政院則緊接著於十月22日成立常設性任務編組的食品安全辦公室。</p>
+
   <h1 class="ui header">相關報導</h1>
   <div class="ui list">
-  <a class="item link" href="http://bit.ly/1qYTOmV" target="_blank">
+  <a class="item link" href="http://www.appledaily.com.tw/realtimenews/article/new/20141022/492241/" target="_blank">
     <i class="right triangle icon"></i>
-    食管法完成初審 綠委憂再遭大廠遊說翻盤 / 風傳媒
+    食安辦公室成立　與國安預警會報平行合作 / 蘋果日報
+  </a>
+  <a class="item link" href="http://bit.ly/1Drqmhh" target="_blank">
+    <i class="right triangle icon"></i>
+    多數條文無共識 將送朝野協商 / 風傳媒
   </a>
   </div>
 

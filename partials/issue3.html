@@ -21,14 +21,7 @@
   </div>
 
   
-  <div class="progress_block">
-      <div class="bullet_progress bullet_progress_done">一讀</div>
-      <div class="bullet_progress bullet_progress_done">委員會</div>
-      <div class="bullet_progress bullet_progress_active">朝野協商</div>
-      <div class="bullet_progress bullet_progress_pending">二讀</div>
-      <div class="bullet_progress bullet_progress_pending"><a class="hint--top hint--always bullet_progress_hint" data-hint="最快 10/24"></a>三讀</div>
-  </div>
-
+  <div ng-include src="'partials/bill_progress.html'"></div>
 
   <div class="ui divider"></div>
   <div ng-include src="'partials/position_block.html'"></div>
@@ -68,7 +61,7 @@
   
   
   <div id="text_content">
-    <div id="text_nav">NAV</div>
+    <!-- <div id="text_nav">NAV</div> -->
   <!-- 修法背景 -->
   <h1 class="ui header">修法背景</h1>
   <p>2011年的三聚氫氨事件中，消費者因難舉證身體受到侵害而無法順利求償，民進黨團及田秋堇等委員分別提案修訂《食安法》第五十六條，若消費者不能證明「有損害」，也可依侵害求償，讓舉證責任回歸廠商。</p>
@@ -82,7 +75,7 @@
 
   
   <!-- 對應條文 -->
-  <h1 class="ui header">修法內容</h1>
+  <h1 class="ui header">初審修法內容</h1>
   
   <h4 class="ui header">第五十六條</h4>
   <p>田秋堇表示，消費者食用黑心食品難以證明對身體的傷害，舉證責任應轉移給廠商。尤美女也認為，這次如果不是消費者發起拒買滑動，頂新依然故我，因為「損害賠償」難以成立。</p>
