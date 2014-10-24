@@ -48,7 +48,7 @@ a.link, a.link:visited {
      display: none;
   }
 }
-@media (max-width: 400px){
+@media screen and (max-width: 480px){
   .wrapper{
      width: 100%;
   }
@@ -84,6 +84,12 @@ a.link, a.link:visited {
     padding: 5px;
     padding-top: 15px;
     box-sizing: border-box;
+}
+@media (max-width: 320px){
+  .nav_item {
+    padding-left: 0px;
+    padding-right: 3px;
+  }
 }
 .nav_item_logo {
     display: inline-block;
