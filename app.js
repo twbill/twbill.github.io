@@ -82,61 +82,24 @@ app.controller('NavCtrl', ['$scope', '$location', function ($scope, $location){
    };
 }]);
 app.controller('IndexCtrl', ['$scope', 'DataService', '$location', function ($scope, DataService, $location){
-  $scope.politians = [
-      {
-        "name": "田秋堇",
-        "party": "民主進步黨",
-        "party_eng": "DPP",
-        "position" : "against"
-      },
-      {
-        "name": "尤美女",
-        "party": "民主進步黨",
-        "party_eng": "DPP",
-        "position" : "against"
-      },
-      {
-        "name": "費鴻泰",
-        "party": "中國國民黨",
-        "party_eng": "KMT",
-        "position" : "for"
-      },
-      {
-        "name": "王育敏",
-        "party": "中國國民黨",
-        "party_eng": "KMT",
-        "position" : "for"
-      },
-      {
-        "name": "行政院",
-        "party": "政府部門",
-        "party_eng": "GOV",
-        "position" : "for"
-      },
-      {
-        "name": "司法院",
-        "party": "政府部門",
-        "party_eng": "GOV",
-        "position" : "against"
-      },
-      {
-        "name": "法務部",
-        "party": "政府部門",
-        "party_eng": "GOV",
-        "position" : "for"
-      },
-      {
-        "name": "衛福部",
-        "party": "政府部門",
-        "party_eng": "GOV",
-        "position" : "for"
-      }
-  ]
+   
+    $scope.setFocus = function (value) {
+      if($scope.isFocus(value)){
+        $scope.currentFocus = null;
 
-   $scope.go = function(path){
+      }else{
+        $scope.currentFocus = value;
+
+      }
+      
+    };
+    $scope.isFocus = function (value) {
+      return $scope.currentFocus === value;
+    };
+    $scope.go = function(path){
       window.scrollTo(0,0);
       $location.path(path);
-   };
+    };
 }]);
 app.controller('Issue1Ctrl', ['$scope', 'DataService', '$location', function ($scope, DataService, $location){
   $scope.politians = [
